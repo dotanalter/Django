@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="header">
+        <div id="branding">
+<h1 id="site-name"><a href="/admin/">Django administration</a></h1>
+        </div>
+        <div id="user-tools">
+                Welcome,
+                <strong>{{ user.first_name }}</strong>.
+                    <a href="/">View site</a> /
+                <a href="/admin/password_change/">Change password</a> /
+                <a href="/admin/logout/">Log out</a>
+        </div>
+    </div>
+<div class="row">
+ <div class="col s12 m6 offset-m3">
+  <H3>Hi {{ user.first_name }}!</H3>
+ </div>
+</div>
+{% endblock %}
