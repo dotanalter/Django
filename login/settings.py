@@ -154,5 +154,5 @@ SOCIAL_AUTH_GOOGLE_PLUS_SCOPE = [
 ]
 LOGIN_URL = '/account/login/'
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '461973402253-nuhu4or08bnupo2okfak6li29nk738tt.apps.googleusercontent.com'  # Paste CLient Key
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'PIqnCb0sr0wVCh-JMQsrtW9J'  # Paste Secret Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '292640677415-2ik0q2m2uv2rjssqvo21g7croejnfs3b.apps.googleusercontent.com'  # Paste CLient Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'Mh4fGUs5kSN4GN7nw89M9Yit'  # Paste Secret Key

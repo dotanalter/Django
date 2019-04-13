@@ -7,10 +7,13 @@ from django.http import HttpResponseRedirect
 from django.db import transaction
 from .models import Profile
 from .forms import UserForm,ProfileForm
+
 @login_required
 def Home(request):
     return render(request, 'home.html')
 @login_required
+
+
 @transaction.atomic
 def update_profile(request):
     if request.method == 'POST':
@@ -21,7 +24,7 @@ def update_profile(request):
             profile_form.save()
             return HttpResponseRedirect('/')
         else:
-            return HttpResponseRedirect('/')
+            return render('login.html')
     else:
         user_form = UserForm(instance=request.user)
         profile_form = ProfileForm(instance=request.user.profile)
@@ -29,6 +32,7 @@ def update_profile(request):
         'user_form': user_form,
         'profile_form': profile_form
     })
+
 def Logout(request):
     logout(request)
     return HttpResponseRedirect('/')
